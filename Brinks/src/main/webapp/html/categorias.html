@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="UTF-8">
+    	<title>Brinks - Categorias</title>
+    	<style>
+			.topnav {
+				background-color:#fc324e;		
+				position: fixed;
+    			top: 0;
+    			left: 0;
+    			height: 100px;
+    			width: 100%;
+    			outline: 4px solid #000;
+			}	
+
+        
+	        .topnav img {
+	            position: fixed;
+	            top: -25px;
+	            left: 60px;
+	            height: 150px;
+	            width: auto;
+	        }
+	        
+	        .topnav h1 {           
+	            color: white;
+	            text-align: center;
+	            text-shadow: 3px 2px 0 #000;	            
+	            font-family: 'Courier New', Courier, monospace;
+	            font-size: 35px;
+	            padding: 10px;
+	        }
+	        
+	        .sidebar {
+	            background: linear-gradient(to bottom, #fc324e, #2d94f5); 
+	            position: fixed;
+	            top: 102px;
+	            left: 0;
+	            height: 100%;
+	            width: 275px;
+	            outline: 2px solid #000;
+	            overflow-x: hidden;
+	        }
+	        
+	        .sidebar h2 {
+	            padding: 15px 25px;
+	            margin-top: 2px;
+	            margin-bottom: 0px;
+	            text-align: center;
+	            text-shadow: 3px 2px 0 #000;
+	            font-size: 30px;
+	          	font-family: Arial, Helvetica, sans-serif;
+	            color: #fff;
+	            background-color: #ffd351;
+	            outline: 3px solid #000;
+	        }
+	        
+	        .sidebar a {
+	            padding: 15px 25px;
+	            text-decoration: none;
+	            text-shadow: 2px 2px 0 #000;	            
+	            font-size: 20px;
+	            font-family: Arial, Helvetica, sans-serif;
+	            color: white;
+	            display: block;
+	            outline: 1px solid #000;	            
+	        }
+	        
+	        .sidebar a:hover {
+	            background-color: #2d94f5;
+	        }
+	        
+	        .sidebar a[href="categorias.html"] {
+            	background-color: #2d94f5;
+	        }
+	
+	        .content {
+	            margin-left: 300px;
+	            margin-top: 100px;
+	            padding: 20px;
+	           	text-decoration: none;
+	            font-family: Arial, Helvetica, sans-serif;
+	        }
+	        
+	     	.content h2{
+	            font-size: 26px;
+	        }
+	        
+			.categorias {
+			    margin-top: 40px;
+			    display: grid;
+			    grid-template-columns: repeat(4, 1fr);
+			    gap: 20px;
+			}
+			
+			.categoria {
+			    text-align: center;
+			    background-color: #f5f5f5;
+			    padding: 20px;
+			}
+			
+		    .categoria img{
+			    height: 200px;
+			    width: auto;
+			}
+			
+			.categoria p {
+			    margin: 10px 0;
+			}
+
+    	</style>
+	</head>
+	<body>
+	    <div class="topnav">
+	        <img src="../images/logo.png" alt="Logo">
+	        <h1>Brinks</h1>
+	    </div>
+	
+	    <div class="sidebar">
+	        <h2>Menu Principal</h2>
+	        <a href="../ServletBrinquedo?cmd=listarDestaques">Home</a>
+	        <a href="categorias.html">Catálogo de Brinquedos</a>
+	        <a href="login.html">Administração</a>
+	        <a href="sobre.html">Sobre a Equipe</a>
+	    </div>
+	    
+		<div class="content">
+		    <h2>Catálogo de Brinquedos :: Categorias</h2>
+		    <hr>
+		
+		    <div class="categorias">
+		        <div class="categoria">
+					<a href="../ServletBrinquedo?cmd=listarPorCategoria&txtCategoria=Especiais">
+						<img src="../images/categorias/especiais.png"></a>
+					<p><strong>Especiais</strong></p>
+		        </div>
+		
+		        <div class="categoria">
+					<a href="../ServletBrinquedo?cmd=listarPorCategoria&txtCategoria=Esportes">
+						<img src="../images/categorias/esportes.png"></a>
+					<p><strong>Esportes</strong></p>						
+		        </div>
+		        
+		        <div class="categoria">
+					<a href="../ServletBrinquedo?cmd=listarPorCategoria&txtCategoria=Jogos">
+						<img src="../images/categorias/jogos.png"></a>
+					<p><strong>Jogos</strong></p>						
+		        </div>
+		        
+		        <div class="categoria">
+					<a href="../ServletBrinquedo?cmd=listarPorCategoria&txtCategoria=Bonecas">
+						<img src="../images/categorias/bonecas.png"></a>
+					<p><strong>Bonecas</strong></p>						
+		        </div>
+		        
+		        <div class="categoria">
+					<a href="../ServletBrinquedo?cmd=listarPorCategoria&txtCategoria=Miniaturas">
+						<img src="../images/categorias/miniaturas.png"></a>
+					<p><strong>Miniaturas</strong></p>						
+		        </div>
+		        
+		        <div class="categoria">
+					<a href="../ServletBrinquedo?cmd=listarPorCategoria&txtCategoria=Bichos">
+						<img src="../images/categorias/bichos.png"></a>
+					<p><strong>Bichos</strong></p>						
+		        </div>
+		        
+		        <div class="categoria">
+					<a href="../ServletBrinquedo?cmd=listarPorCategoria&txtCategoria=Educativos">
+						<img src="../images/categorias/educativos.png"></a>
+					<p><strong>Educativos</strong></p>						
+		        </div>
+		        
+		        <div class="categoria">
+					<a href="../ServletBrinquedo?cmd=listarPorCategoria&txtCategoria=Tecnologia">
+						<img src="../images/categorias/tecnologia.png"></a>
+					<p><strong>Tecnologia</strong></p>						
+		        </div>
+		    </div>
+		</div>
+	</body>
+</html>
