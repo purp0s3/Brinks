@@ -1,2 +1,2 @@
 # Brinks
-### A dummy toy store website built using Java, JSP, SQL, Apache Tomcat. Mixed en-us and pt-br.
+### A toy store website mockup built using Java, JSP, SQL, Apache Tomcat. Code with en-us and pt-br mixed because I think with both languages.
